@@ -1,12 +1,12 @@
 class Story {
   String storyTitle;
-  String choiceA;
-  String choiceB;
+  String choice1;
+  String choice2;
 
-  Story(
+  Story({
     //Class constructor
     this.storyTitle,
-    this.choiceA,
-    this.choiceB,
-  );
+    this.choice1,
+    this.choice2,
+  });
 }
