@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'story_brain.dart';
 
-//TODO: Step 15 - Run the app and see if you can see the screen update with the first story. Delete this TODO if it looks as you expected.
-
 void main() => runApp(Destini());
 
 class Destini extends StatelessWidget {
@@ -40,7 +38,7 @@ class _StoryPageState extends State<StoryPage> {
                 flex: 12,
                 child: Center(
                   child: Text(
-                    brain.getStory(0),
+                    brain.getStory(),
                     style: TextStyle(
                       fontSize: 25.0,
                     ),
@@ -52,11 +50,11 @@ class _StoryPageState extends State<StoryPage> {
                 child: FlatButton(
                   onPressed: () {
                     //Choice 1 made by user.
-                    //TODO: Step 18 - Call the nextStory() method from storyBrain and pass the number 1 as the choice made by the user.
+                    brain.nextStory(1);
                   },
                   color: Colors.red,
                   child: Text(
-                    brain.getChoice1(0),
+                    brain.getChoice1(),
                     style: TextStyle(
                       fontSize: 20.0,
                     ),
@@ -73,11 +71,11 @@ class _StoryPageState extends State<StoryPage> {
                 child: FlatButton(
                   onPressed: () {
                     //Choice 2 made by user.
-                    //TODO: Step 19 - Call the nextStory() method from storyBrain and pass the number 2 as the choice made by the user.
+                    brain.nextStory(2);
                   },
                   color: Colors.blue,
                   child: Text(
-                    brain.getChoice2(0),
+                    brain.getChoice2(),
                     style: TextStyle(
                       fontSize: 20.0,
                     ),
