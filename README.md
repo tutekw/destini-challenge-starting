@@ -1,4 +1,4 @@
-![App Brewery Banner](https://github.com/londonappbrewery/Images/blob/master/AppBreweryBanner.png)
+My take on the Boss Challenge to create a story App resembling book stories from 80's. Below official describtion
 
 
 # Destini 🤔
@@ -11,5 +11,3 @@ In this challenge, you will be building a choose your own adventure game like Ba
 
 
 >This is a companion project to The App Brewery's Complete Flutter Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
-
-![End Banner](https://github.com/londonappbrewery/Images/blob/master/readme-end-banner.png)
