@@ -67,19 +67,20 @@ class _StoryPageState extends State<StoryPage> {
               ),
               Expanded(
                 flex: 2,
-                //TODO: Step 26 - Use a Flutter Visibility Widget to wrap this FlatButton.
-                //TODO: Step 28 - Set the "visible" property of the Visibility Widget to equal the output from the buttonShouldBeVisible() method in the storyBrain.
-                child: FlatButton(
-                  onPressed: () {
-                    //Choice 2 made by user.
-                    brain.nextStory(2);
-                    setState(() {});
-                  },
-                  color: Colors.blue,
-                  child: Text(
-                    brain.getChoice2(),
-                    style: TextStyle(
-                      fontSize: 20.0,
+                child: Visibility(
+                  visible: brain.buttonShouldBeVisible(),
+                  child: FlatButton(
+                    onPressed: () {
+                      //Choice 2 made by user.
+                      brain.nextStory(2);
+                      setState(() {});
+                    },
+                    color: Colors.blue,
+                    child: Text(
+                      brain.getChoice2(),
+                      style: TextStyle(
+                        fontSize: 20.0,
+                      ),
                     ),
                   ),
                 ),
